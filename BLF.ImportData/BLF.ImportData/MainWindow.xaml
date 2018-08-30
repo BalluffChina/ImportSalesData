@@ -1,0 +1,22 @@
+﻿<Window x:Class="BLF.ImportData.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="500" Width="680">
+    <Grid>
+        <Label Content="Excel File Location:" HorizontalAlignment="Left" Margin="58,62,0,0" VerticalAlignment="Top" Width="104"/>
+        <Label Content="PLease input excel path when upload data to blf_Order, blf_Account, blf_MaterialPrice or blf_OpenOrder" HorizontalAlignment="Left" Margin="58,93,0,0" VerticalAlignment="Top" Width="532"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="189,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" Name="filePath"/>
+        <Label Content="Table Name:" HorizontalAlignment="Left" Margin="58,136,0,0" VerticalAlignment="Top" Width="95" Height="24"/>
+        <ComboBox HorizontalAlignment="Left" Margin="189,136,0,0" VerticalAlignment="Top" Width="336" Name="tables" Loaded="tables_Loaded"/>
+        <Button Content="Import Data" HorizontalAlignment="Left" Margin="149,354,0,0" VerticalAlignment="Top" Width="75" Click="ButtonImport_Click" />
+        <Button Content="Update Data" HorizontalAlignment="Left" Margin="290,354,0,0" VerticalAlignment="Top" Width="75" Visibility="Collapsed" Click="ButtonUpdate_Click" />
+        <Label Content="Upload Data In BLF_Data Datatable" HorizontalAlignment="Left" Margin="201,21,0,0" VerticalAlignment="Top" Width="188"/>
+        <Button Content="Export Data" HorizontalAlignment="Left" Margin="450,354,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" Click="ButtonExport_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="145" Margin="58,186,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="467" Name="Error" IsReadOnly="True"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="530,65,0,0" VerticalAlignment="Top" Width="75" Click="Browse_Click"/>
+
+
+
+
+    </Grid>
+</Window>
